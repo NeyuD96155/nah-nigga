@@ -3,6 +3,7 @@ import { data } from '../shared/ListOfFilm';
 
 function Detail() {
   const userName = useParams();
+  // eslint-disable-next-line eqeqeq
   const film = data.find(obj => obj.id == userName.id);
 
   // Handling the case where the film is not found
