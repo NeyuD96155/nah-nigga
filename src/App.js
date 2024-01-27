@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./component/Header";
+import { Routes, Route } from "react-router-dom";
+import Footer from "./component/Footer";
+import "./style/main.css";
+import Contact from "./component/Contact";
+import Detail from "./component/Detail";
+import Main from "./component/Main";
+import About from "./component/About";
+import News from "./component/News";
+import { Ripple, initMDB } from "mdb-ui-kit";
 
+initMDB({ Ripple });
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/detail/:id" element={<Detail />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/news" element={<News />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
-
 export default App;

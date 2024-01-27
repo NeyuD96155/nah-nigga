@@ -1,0 +1,480 @@
+
+/* Specific button styles can be added here */
+.home-button {
+    background-color: #4CAF50;
+    /* Green background for home button */
+    color: white;
+}
+
+.news-button {
+    background-color: #2196F3;
+    /* Blue background for news button */
+    color: white;
+}
+
+.contact-button {
+    background-color: #f44336;
+    /* Red background for contact button */
+    color: white;
+}
+
+.about-button {
+    background-color: #ffeb3b;
+    /* Yellow background for about button */
+    color: black;
+}
+
+.switch-mode-button {
+    background-color: #a62424;
+    /* Grey background for switch mode button */
+    color: white;
+}
+
+/* Add specific styles for each button if needed */
+
+
+
+
+button {
+
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 3s;
+    color: rgb(161, 29, 29);
+
+    width: 100%;
+}
+
+
+
+a {
+    text-align: none;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+
+.switch-mode {
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(233, 228, 122);
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+
+}
+
+/* Style.css */
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Center the content */
+    text-align: left;
+    /* Align all list items to the left */
+}
+
+li {
+    display: inline-block;
+    /* Display list items in a line */
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:last-child {
+    text-align: left;
+    /* Align the last list item to the left */
+}
+
+
+
+.container {
+    margin-top: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup img {
+    width: 100%;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* footer */
+.app-footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-section input[type="email"] {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.footer-section button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+content
+.container {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3 {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: stretch;
+    flex: 0 0 25%;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.title {
+    color: #666;
+    margin: 5px 0;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* detail */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+.product-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    width:100%;
+}
+
+.product-tumb img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h4 {
+    margin: 0;
+    color: #333;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.product-price {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #565656;
+    
+}
+
+.product-bottom-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-details p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* presentation */
+.container {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.title {
+    color: #666;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+/* button  */
+.btn-rounded {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  

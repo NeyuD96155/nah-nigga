@@ -1,0 +1,41 @@
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-container h1, .about-container h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.about-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about-team {
+    text-align: center;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.team-member h3 {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    margin: 5px 0;
+}
