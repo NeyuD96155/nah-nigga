@@ -1,85 +1,134 @@
-h2 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
+.contact-container {
+  max-width: 500px; /* Reduced size */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
 }
 
-p {
-    text-align: center;
-    margin-bottom: 20px;
+.contact-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* More prominent hover effect */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.contact-container h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.8rem; /* Slightly reduced size */
+}
+
+.contact-container p {
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem; /* Reduced size */
 }
 
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
+  display: grid;
+  grid-gap: 15px; /* Reduced gap */
+  justify-content: center; /* Centered */
 }
 
-form div {
-    margin-bottom: 15px;
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+form input, form textarea {
+  width: 90%; /* Reduced width */
+  margin: 0 auto; /* Centered */
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+form input:focus, form textarea:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.6); /* Enhanced focus effect */
+  outline: none;
 }
 
-textarea {
-    height: 100px;
+form textarea {
+  height: 80px; /* Reduced height */
+  resize: vertical;
 }
 
+.btn-outline-success {
+  width: 90%; /* Reduced width */
+  margin: 0 auto; /* Centered */
+  padding: 10px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  background-color: #28a745;
+  cursor: pointer;
+}
 
+.btn-outline-success:hover {
+  background-color: #218838;
+}
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+      max-width: 90%; /* More responsive for smaller screens */
+      padding: 15px;
+      margin: 20px auto;
   }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+
+  form input, form textarea, .btn-outline-success {
+      width: 100%; /* Full width for smaller screens */
   }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+
+  .contact-container h2 {
+      font-size: 1.5rem;
   }
-  
-  .close-btn:hover,
-  .close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+  .contact-container p {
+      font-size: 0.9rem; /* Slightly smaller for smaller screens */
   }
-  .modal-content {
-    position: relative;
-    /* Các style khác cho modal-content */
-  }
+}

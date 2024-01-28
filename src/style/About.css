@@ -1,51 +1,104 @@
 .about-container {
-    max-width: 800px;
-    margin: auto;
+    background-color: #fff;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    transition: all 0.3s ease-in-out;
 }
 
-.about-container h1 {
-    text-align: center;
+.about-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-container h1, .about-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-mission, .about-history, .about-team, .about-values {
     margin-bottom: 30px;
+    border-left: 4px solid #007BFF;
+    padding-left: 15px;
 }
 
-.about-mission, .about-history, .about-values {
-    margin-bottom: 30px;
-}
-
-.about-mission h2, .about-history h2, .about-values h2 {
-    color: #0056b3;
-    margin-bottom: 15px;
-}
-
-.about-mission p, .about-history p, .about-values p {
-    text-align: justify;
+.about-container p {
     line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
-.about-team {
-    text-align: center;
-    margin-top: 30px;
+.about-container b {
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.about-container i {
+    font-style: italic;
+    color: #007BFF;
 }
 
 .team-member {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #007BFF;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
 }
 
 .team-member h3 {
     font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+    text-transform: capitalize;
 }
 
 .team-member p {
-    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .team-member {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-container h1, .about-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
 }

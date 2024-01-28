@@ -1,0 +1,28 @@
+/* DetailArticle.css */
+
+.article-detail {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add some padding around the content */
+    background: #fff; /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+  }
+  
+  .article-detail h2 {
+    font-size: 2rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Optional: Set a color for the title */
+  }
+  
+  .article-detail img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+  .article-detail p {
+    font-size: 1rem; /* Readable font size for content */
+    line-height: 1.6; /* Line height for better readability */
+    color: #444; /* Slightly softer color for the text */
+  }
+  

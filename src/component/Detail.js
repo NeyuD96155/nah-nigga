@@ -1,31 +1,28 @@
 import { useParams } from 'react-router-dom';
 import { data } from '../shared/ListOfFilm';
-
+import '../style/Detail.css'
 function Detail() {
-  const userName = useParams();
-  // eslint-disable-next-line eqeqeq
-  const film = data.find(obj => obj.id == userName.id);
+  const { id } = useParams();
+  const film = data.find(obj => obj.id === Number(id));
 
-  // Handling the case where the film is not found
   if (!film) {
     return <div>Film not found</div>;
   }
 
   return (
     <div className='container'>
-      <div className='product-card'>
-        <div className='badge'>{film.name}</div>
-        <div className='product-tumb'>
-          <img src={`../${film.img}`} alt=''/>
+      <section className='film-card'>
+        <header className='badge'>{film.name}</header>
+        <div className='film-thumbnail'>
+          <img src={`../${film.img}`} alt={`${film.name} Poster`} />
         </div>
-        <div className='product-details'>
+        <div className='film-details'>
           <h4>{film.Director}</h4>
-          <div className='product-price'>Công chiếu: {film.year}</div>
+          <div className='film-release-date'>Công chiếu: {film.year}</div>
           <p><b>Sơ lược</b>: {film.info}</p>
           <p><b>Cốt truyện</b>: {film.lore}</p>
-          <div className='product-bottom-details'></div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

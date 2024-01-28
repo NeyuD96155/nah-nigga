@@ -112,7 +112,7 @@ export const data = [
     name: "Neko no Ongaeshi",
     year: "19/7/2002",
     director: "Morita Hiroyuki",
-    img: "./assets/img/14.jpg",
+    img: "./assets/img/13.jpg",
     lore: "Cốt truyện xoay quanh Haru một nữ sinh trung học sau khi cô cứu được một chú mèo lạ khỏi bị xe tông, cô đã nhận được sự cảm kích của những chú mèo và sau đó cô được đưa đến vương quốc của loài mèo để trở thành vợ của thái tử. Cuộc phiêu lưu của Haru bắt đầu.",
     info: "Loài mèo trả ơn (Nhật: 猫の恩返し, ねこのおんがえし Hepburn: Neko no Ongaeshi) là một phim anime do hãng Studio Ghibli thực hiện với bàn tay của đạo diễn Morita Hiroyuki. Bộ phim được chuyển thể từ loạt manga cùng tên của Hiiragi Aoi. Phim được công chiếu lần đầu vào ngày 19 tháng 7 năm 2002. Bộ phim đã giành được giải xuất sắc trong Liên hoan Nghệ thuật truyền thông Nhật Bản năm 2002. Tại Việt Nam, phim được chiếu trên kênh SAM - BTV11 vào ngày 8 tháng 5 năm 2016 đến ngày 10 tháng 5 năm 2016.",
   },

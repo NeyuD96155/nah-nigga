@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Films } from "../Share/Films";
 import { Ripple, initMDB } from "mdb-ui-kit";
-
+import "../style/FilmPresentation.css";
 initMDB({ Ripple });
 export default function Content() {
   const [film, setFilm] = useState([]);
@@ -23,6 +23,7 @@ export default function Content() {
                 className="btn btn-outline-success btn-rounded"
                 data-mdb-ripple-color="dark"
                 onClick={() => setFilm(film)}
+                style={{ textDecoration: "none" }}
               >
                 Detail
               </Link>
