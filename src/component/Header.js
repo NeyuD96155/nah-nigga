@@ -21,7 +21,7 @@ const Header = () => {
           <ul>
             <li>
               <button
-                className="home-button"
+                className="home-header"
                 style={{
                   backgroundColor: theme.backgroundColor,
                   color: theme.color,
@@ -33,7 +33,7 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="news-button"
+                className="news-header"
                 style={{
                   backgroundColor: theme.backgroundColor,
                   color: theme.color,
@@ -45,7 +45,7 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="contact-button"
+                className="contact-header"
                 style={{
                   backgroundColor: theme.backgroundColor,
                   color: theme.color,
@@ -57,7 +57,7 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="about-button"
+                className="about-header"
                 style={{
                   backgroundColor: theme.backgroundColor,
                   color: theme.color,
@@ -69,7 +69,7 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="switch-mode-button"
+                className="switch-mode-header"
                 style={{
                   backgroundColor: theme.backgroundColor,
                   color: theme.color,

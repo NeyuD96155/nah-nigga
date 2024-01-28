@@ -1,29 +1,30 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Films } from "../Share/Films";
 import { Ripple, initMDB } from "mdb-ui-kit";
 import "../style/FilmPresentation.css";
+
 initMDB({ Ripple });
+
 export default function Content() {
   const [film, setFilm] = useState([]);
+
   return (
-    <div className="container">
-      <div className="row">
+    <div className="film-container">
+      <div className="film-row">
         {Films.map((film, index) => (
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12" key={index}>
-            <div className="card text-center">
-              <img src={film.img} alt={film.name} className="img-fluid" />
+          <div className="film-col-lg-3 film-col-md-4 film-col-sm-6 film-col-12" key={index}>
+            <div className="film-card text-center">
+              <img src={film.img} alt={film.name} className="film-img-fluid" />
               <h3>{film.name}</h3>
-              <p className="title">{film.year}</p>
-              <p className="title">{film.director}</p>
+              <p className="film-title">{film.year}</p>
+              <p className="film-title">{film.director}</p>
               <Link
                 to={`detail/${film.id}`}
-                className="btn btn-outline-success btn-rounded"
+                className="film-btn btn-rounded"
                 data-mdb-ripple-color="dark"
                 onClick={() => setFilm(film)}
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none" ,color:'#fff'}}
               >
                 Detail
               </Link>
@@ -31,14 +32,12 @@ export default function Content() {
           </div>
         ))}
 
-        <div id="popup1" className="overlay">
-          <div className="popup">
-            <img src={film.img} className="img-fluid" />
+        <div id="film-popup1" className="film-overlay">
+          <div className="film-popup">
+            <img src={film.img} className="film-img-fluid" alt='zz' />
             <h3>{film.name}</h3>
-            <a className="close" href="#">
-              &times;
-            </a>
-            <div className="content">{film.info}</div>
+            <a className="film-close" href="#">&times;</a>
+            <div className="film-content">{film.info}</div>
           </div>
         </div>
       </div>

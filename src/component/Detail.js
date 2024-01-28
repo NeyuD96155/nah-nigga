@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { data } from "../shared/ListOfFilm";
 import "../style/Detail.css";
+
 function Detail() {
   const { id } = useParams();
   const film = data.find((obj) => obj.id === Number(id));
@@ -10,15 +11,17 @@ function Detail() {
   }
 
   return (
-    <div className="container">
-      <section className="film-card">
-        <header className="badge">{film.name}</header>
-        <div className="film-thumbnail">
+    <div className="detail-container">
+      <section className="detail-film-card">
+        <header className="detail-badge">{film.name}</header>
+        <div className="detail-film-thumbnail">
           <img src={`../${film.img}`} alt={`${film.name} Poster`} />
         </div>
-        <div className="film-details">
-          <h4>{film.Director}</h4>
-          <div className="film-release-date">Công chiếu: {film.year}</div>
+        <div className="detail-film-details">
+          <h4>{film.director}</h4>
+          <div className="detail-film-release-date">
+            Công chiếu: {film.year}
+          </div>
           <p>
             <b>Sơ lược</b>: {film.info}
           </p>

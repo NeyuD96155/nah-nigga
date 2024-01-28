@@ -1,12 +1,13 @@
 import React from "react";
 import "../style/About.css";
+
 const About = () => {
   return (
     <div className="about-container">
-      <h1>About Us</h1>
-      <section className="about-mission">
-        <h2>Our Mission</h2>
-        <p>
+      <h1 className="about-heading">About Us</h1>
+      <section className="about-section about-mission">
+        <h2 className="about-subheading">Our Mission</h2>
+        <p className="about-paragraph">
           Imagine that your application is dedicated to enhancing user
           experience through innovative technology. The mission statement might
           go as follows: "Our mission at <b>MINT TICKET</b> is to revolutionize
@@ -22,9 +23,9 @@ const About = () => {
         </p>
       </section>
 
-      <section className="about-history">
-        <h2>Our History</h2>
-        <p>
+      <section className="about-section about-history">
+        <h2 className="about-subheading">Our History</h2>
+        <p className="about-paragraph">
           The history of your application can be narrated to reflect its
           journey, challenges, and achievements. For example: "The journey of
           <b> MINT TICKET</b> began in <i>2023</i>, born from a passion for
@@ -47,10 +48,9 @@ const About = () => {
         </p>
       </section>
 
-      <section className="about-team">
-        <h2>Meet the Team</h2>
-
-        <div className="team-member">
+      <section className="about-section about-team">
+        <h2 className="about-subheading">Meet the Team</h2>
+        <div className="about-team-member">
           <img src="./assets/img/phuoc.jpg" alt="Team Member Name" />
           <h3>Mint</h3>
           <p>Producer</p>
@@ -63,9 +63,9 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-values">
-        <h2>Our Values</h2>
-        <p>
+      <section className="about-section about-values">
+        <h2 className="about-subheading">Our Values</h2>
+        <p className="about-paragraph">
           "At <b>MINT TICKET</b>, our values are the cornerstone of our identity
           and the compass that guides every aspect of our work, decision-making,
           and innovation. These values are not just words to us; they are the

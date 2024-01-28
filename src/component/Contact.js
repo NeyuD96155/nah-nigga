@@ -24,12 +24,12 @@ const Contact = () => {
 
   const SuccessModal = ({ onClose }) => {
     return (
-      <div className="modal">
-        <div className="modal-content">
-          <span className="close-btn" onClick={onClose}>
+      <div className="contact-modal">
+        <div className="contact-modal-content">
+          <span className="contact-close-btn" onClick={onClose}>
             &times;
           </span>
-          <p>Tin nhắn của bạn đã được gửi thành công!</p>
+          <p>Your message has been sent successfully!</p>
         </div>
       </div>
     );
@@ -37,10 +37,12 @@ const Contact = () => {
 
   return (
     <div>
-      <h2>Contact Us</h2>
-      <p>Have questions? Reach out to us!</p>
+       <div className="contact-container">
+      <h2 className="contact-heading">Contact Us</h2>
+      <p className="contact-description">Have questions? Reach out to us!</p>
 
-      <form onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}>
+
         <div>
           <label>Name:</label>
           <input
@@ -77,12 +79,13 @@ const Contact = () => {
       </form>
 
       {/* Additional contact information */}
-      <div>
+      <div className="contact-info">
         <p>Email: phuochvse171793@fpt.edu.vn</p>
         <p>Phone: 0832345780</p>
       </div>
-      {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
+    {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
     </div>
+  </div>
   );
 };
 

@@ -1,53 +1,55 @@
+/* Header.css */
+
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5em 2em;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  margin: 0 15px;
+nav li {
+  display: inline;
 }
 
-button {
+nav button {
   border: none;
   outline: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
-  background-color: #666;
-  color: #fff;
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.home-button,
-.news-button,
-.contact-button,
-.about-button,
-.switch-mode-button {
-  background-color: inherit;
-  color: inherit;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1em;
+  }
 
-@media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
   }
 
-  nav ul li {
-    margin: 5px 0;
+  nav button {
+    width: 100%;
+    text-align: center;
   }
 }
