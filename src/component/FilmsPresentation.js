@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Films } from "../Share/Films";
@@ -13,7 +14,10 @@ export default function Content() {
     <div className="film-container">
       <div className="film-row">
         {Films.map((film, index) => (
-          <div className="film-col-lg-3 film-col-md-4 film-col-sm-6 film-col-12" key={index}>
+          <div
+            className="film-col-lg-3 film-col-md-4 film-col-sm-6 film-col-12"
+            key={index}
+          >
             <div className="film-card text-center">
               <img src={film.img} alt={film.name} className="film-img-fluid" />
               <h3>{film.name}</h3>
@@ -24,7 +28,6 @@ export default function Content() {
                 className="film-btn btn-rounded"
                 data-mdb-ripple-color="dark"
                 onClick={() => setFilm(film)}
-                style={{ textDecoration: "none" ,color:'#fff'}}
               >
                 Detail
               </Link>
@@ -34,9 +37,11 @@ export default function Content() {
 
         <div id="film-popup1" className="film-overlay">
           <div className="film-popup">
-            <img src={film.img} className="film-img-fluid" alt='zz' />
+            <img src={film.img} className="film-img-fluid" alt="zz" />
             <h3>{film.name}</h3>
-            <a className="film-close" href="#">&times;</a>
+            <a className="film-close" href="#">
+              &times;
+            </a>
             <div className="film-content">{film.info}</div>
           </div>
         </div>

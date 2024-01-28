@@ -37,55 +37,52 @@ const Contact = () => {
 
   return (
     <div>
-       <div className="contact-container">
-      <h2 className="contact-heading">Contact Us</h2>
-      <p className="contact-description">Have questions? Reach out to us!</p>
+      <div className="contact-container">
+        <h2 className="contact-heading">Contact Us</h2>
+        <p className="contact-description">Have questions? Reach out to us!</p>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
-
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div>
+            <label>Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </div>
+          <button
+            type="submit"
+            className="btn btn-outline-success btn-rounded"
+            data-mdb-ripple-color="dark"
+          >
+            Send Message
+          </button>
+        </form>
+        <div className="contact-info">
+          <p>Email: phuochvse171793@fpt.edu.vn</p>
+          <p>Phone: 0832345780</p>
         </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </div>
-        <button
-          type="submit"
-          className="btn btn-outline-success btn-rounded"
-          data-mdb-ripple-color="dark"
-        >
-          Send Message
-        </button>
-      </form>
-
-      {/* Additional contact information */}
-      <div className="contact-info">
-        <p>Email: phuochvse171793@fpt.edu.vn</p>
-        <p>Phone: 0832345780</p>
+        {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
       </div>
-    {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
     </div>
-  </div>
   );
 };
 

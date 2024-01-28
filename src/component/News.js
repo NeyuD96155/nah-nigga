@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Ripple, initMDB } from "mdb-ui-kit";
@@ -14,7 +15,6 @@ export default function News() {
         {Articles.map((article, index) => (
           <div className="news-col-12" key={index}>
             <div className="news-card text-center">
-              
               <img
                 src={article.image}
                 alt={article.title}
@@ -35,9 +35,11 @@ export default function News() {
         ))}
         <div id="news-popup1" className="news-overlay">
           <div className="news-popup">
-            <img src={article.img} className="news-img-fluid" alt='zz' />
+            <img src={article.img} className="news-img-fluid" alt="zz" />
             <h3>{article.name}</h3>
-            <a className="news-close" href="#">&times;</a>
+            <a className="news-close" href="#">
+              &times;
+            </a>
             <div className="news-content">{article.info}</div>
           </div>
         </div>

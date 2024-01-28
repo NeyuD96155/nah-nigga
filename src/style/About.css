@@ -1,8 +1,6 @@
-/* About Page Styling */
-
 .about-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -73,6 +71,7 @@
 @media screen and (max-width: 768px) {
     .about-container {
         padding: 15px;
+        margin: 40px auto;
     }
 
     .about-heading {

@@ -1,5 +1,3 @@
-/* Detail Article Page Styling */
-
 .detail-container {
   max-width: 800px;
   margin: 40px auto;
@@ -66,10 +64,10 @@
 
 @media screen and (max-width: 768px) {
   .detail-article-card {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .detail-badge {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }

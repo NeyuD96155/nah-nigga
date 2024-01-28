@@ -1,9 +1,11 @@
-/* Footer Styling */
+/* Enhanced Footer Styling for Improved Aesthetics */
 
 .footer-app-footer {
   background-color: #343a40;
   color: #fff;
   padding: 40px 20px;
+  border-top: 4px solid #007bff;
+  /* Adding a top border for a distinct look */
 }
 
 .footer-footer-content {
@@ -17,11 +19,13 @@
   flex: 1;
   min-width: 200px;
   margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .footer-footer-section h4 {
-  color: #007bff;
+  color: #199a1d;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .footer-footer-section p {
@@ -42,26 +46,42 @@
 
 .footer-social-links {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .footer-social-links a {
-  margin-bottom: 5px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-social-links a:hover {
+  transform: scale(1.1);
 }
 
 .footer-footer-bottom {
   text-align: center;
   font-size: 0.8rem;
   color: #ccc;
+  margin-top: 40px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .footer-footer-content {
-      justify-content: center;
-      text-align: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-footer-section {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+    flex-basis: 100%;
+  }
+
+  .footer-social-links {
+    justify-content: space-around;
   }
 }

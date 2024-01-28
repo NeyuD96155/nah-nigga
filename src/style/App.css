@@ -1,105 +1,106 @@
-/* body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  line-height: 1.6;
+/* Light Theme (Default) */
+:root {
+  --link-color: #ffffff;
+  /* Light mode link color */
+  --link-hover-color: #ffffff;
+  /* Light mode link hover color */
+  --background-color: #fff;
+  --text-color: #000;
+  --primary-color: #007bff;
+  /* Example primary color for light theme */
+  --secondary-color: #6c757d;
+  /* Example secondary color for light theme */
+  --border-color: #dee2e6;
+  /* Example border color for light theme */
+  --button-background-color: #f0f0f0;
+  --button-text-color: #333;
+  --button-hover-background-color: #e0e0e0;
+  --button-hover-text-color: #111;
+  --card-bg-color: #fff;
+  /* Light mode card background */
+  --card-text-color: #333;
+  /* Light mode text color */
+  --btn-bg-color: #000000;
+  /* Light mode button background */
+  --btn-text-color: #fff;
+  /* Light mode button text color */
+  --film-card-h3-color: #073615;
+  /* Light mode color for .film-card h3 */
+  --film-title-color: #073615;
+  /* Additional variables for light theme can be defined here */
 }
 
-a {
-  color: #007bff;
+/* Dark Theme */
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #fff;
+  --primary-color: #1a73e8;
+  /* Example primary color for dark theme */
+  --secondary-color: #121212;
+  /* Example secondary color for dark theme */
+  --border-color: #121212;
+  /* Example border color for dark theme */
+  --film-card-h3-color: #ffffff;
+  /* Dark mode color for .film-card h3 */
+  --film-title-color: #ffffff;
+  /* Dark mode color for .film-title */
+  --button-background-color: #121212;
+  --button-text-color: #fff;
+  --button-hover-background-color: #121212;
+  --button-hover-text-color: #ffffff;
+  --card-bg-color: #5d5a5a;
+  /* Dark mode card background */
+  --card-text-color: #000000;
+  /* Dark mode text color */
+  --btn-bg-color: #e5e5e5;
+  /* Dark mode button background */
+  --btn-text-color: #ce2929;
+  /* Dark mode button text color */
+  --link-color: #000000;
+  /* Dark mode link color */
+  --link-hover-color: #000000;
+  /* Dark mode link hover color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  /* Apply other variables as needed */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  /* Smooth transition between themes */
+}
+
+/* film presentation  */
+.film-card {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+
+}
+
+/* Film card button styling */
+.film-btn {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+}
+
+.film-card h3 {
+  color: var(--film-card-h3-color);
+  margin: 10px 0;
+}
+
+.film-title {
+  color: var(--film-title-color);
+  font-size: 0.9rem;
+}
+
+.film-btn {
+  color: var(--link-color);
   text-decoration: none;
+  /* Other styling here */
 }
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.film-btn:hover {
+  color: var(--link-hover-color);
+  /* Other hover effects here */
 }
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  background: #333;
-  color: #fff;
-  padding: 1% 0;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1% 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.main {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  min-height: 80vh;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.card:hover {
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 768px) {
-
-  .header,
-  .footer {
-    padding: 1.5% 0;
-  }
-
-  .button {
-    padding: 8px 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  .header,
-  .footer {
-    padding: 2% 0;
-  }
-
-  .button {
-    padding: 6px 10px;
-  }
-} */

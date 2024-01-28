@@ -1,5 +1,3 @@
-/* Contact Page Styling */
-
 .contact-container {
   max-width: 700px;
   margin: 40px auto;
@@ -35,8 +33,8 @@
   font-weight: bold;
 }
 
-.contact-form input[type="text"], 
-.contact-form input[type="email"], 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
   width: 100%;
   padding: 12px;
@@ -46,7 +44,7 @@
   transition: border-color 0.2s ease-in-out;
 }
 
-.contact-form input:focus, 
+.contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #0056b3;
   outline: none;
@@ -93,7 +91,7 @@
 }
 
 .contact-modal-content {
-  position: relative; /* Allows absolute positioning of the close button relative to this container */
+  position: relative;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -106,7 +104,7 @@
 .contact-close-btn {
   position: absolute;
   top: 10px;
-  right: 10px; /* Positioned at the top-right corner of the modal content */
+  right: 10px;
   font-size: 1.5rem;
   color: #333;
   cursor: pointer;
@@ -121,20 +119,20 @@
 
 @media screen and (max-width: 768px) {
   .contact-container {
-      padding: 20px;
+    padding: 20px;
   }
 
   .contact-heading {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
-  .contact-form input[type="text"], 
-  .contact-form input[type="email"], 
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
   .contact-form textarea {
-      padding: 10px;
+    padding: 10px;
   }
 
   .contact-info p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
