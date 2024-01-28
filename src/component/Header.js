@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "../style/Header.css";
 import { ThemeContext } from "./ThemeContext";
 
 const Header = () => {
   const { theme, toggle, dark } = useContext(ThemeContext);
-  const navigate = useNavigate(); // Create navigate function
+  const navigate = useNavigate();
 
   // Helper function to toggle theme
   const handleToggle = () => {
@@ -14,14 +14,19 @@ const Header = () => {
 
   return (
     <div>
-      <nav style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+      <nav
+        style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
+      >
         <div style={{ position: "relative" }}>
           <ul>
             <li>
               <button
                 className="home-button"
-                style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
-                onClick={() => navigate('/')} // Navigate to Home
+                style={{
+                  backgroundColor: theme.backgroundColor,
+                  color: theme.color,
+                }}
+                onClick={() => navigate("/")}
               >
                 Home
               </button>
@@ -29,8 +34,11 @@ const Header = () => {
             <li>
               <button
                 className="news-button"
-                style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
-                onClick={() => navigate('/news')} // Navigate to News
+                style={{
+                  backgroundColor: theme.backgroundColor,
+                  color: theme.color,
+                }}
+                onClick={() => navigate("/news")}
               >
                 News
               </button>
@@ -38,8 +46,11 @@ const Header = () => {
             <li>
               <button
                 className="contact-button"
-                style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
-                onClick={() => navigate('/contact')} // Navigate to Contact
+                style={{
+                  backgroundColor: theme.backgroundColor,
+                  color: theme.color,
+                }}
+                onClick={() => navigate("/contact")}
               >
                 Contact
               </button>
@@ -47,8 +58,11 @@ const Header = () => {
             <li>
               <button
                 className="about-button"
-                style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
-                onClick={() => navigate('/about')} // Navigate to About
+                style={{
+                  backgroundColor: theme.backgroundColor,
+                  color: theme.color,
+                }}
+                onClick={() => navigate("/about")}
               >
                 About
               </button>
@@ -56,7 +70,10 @@ const Header = () => {
             <li>
               <button
                 className="switch-mode-button"
-                style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
+                style={{
+                  backgroundColor: theme.backgroundColor,
+                  color: theme.color,
+                }}
                 onClick={handleToggle}
               >
                 {!dark ? "Dark" : "Light"} mode

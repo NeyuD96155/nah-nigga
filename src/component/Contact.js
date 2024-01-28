@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../style/Contact.css";
 import { Ripple, initMDB } from "mdb-ui-kit";
 
-
 initMDB({ Ripple });
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,19 +9,18 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [showModal, setShowModal] = useState(false); // Thêm state này
+  const [showModal, setShowModal] = useState(false);
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Logic gửi form của bạn
-  
-    setShowModal(true); // Hiển thị Modal
-    setFormData({ name: "", email: "", message: "" }); // Reset form data
+    console.log(formData);
+
+    setShowModal(true);
+    setFormData({ name: "", email: "", message: "" });
   };
-  
 
   const SuccessModal = ({ onClose }) => {
     return (

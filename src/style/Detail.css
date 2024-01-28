@@ -1,88 +1,89 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #f0f0f0;
-    padding-top: 20px; /* Adjust as needed to create space from the header */
-    padding-bottom: 20px; /* Adjust as needed to create space from the footer */
-  }
-  
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+  /* Adjust as needed to create space from the header */
+  padding-bottom: 20px;
+  /* Adjust as needed to create space from the footer */
+}
+
+
+.film-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.film-card header.badge {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.film-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.film-details {
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.film-details h4 {
+  margin-top: 0;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.film-release-date {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.film-details p {
+  margin: 10px 0;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
   .film-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
+    width: 80%;
   }
-  
+
   .film-card header.badge {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.5rem;
-    padding: 15px 20px;
-    text-align: center;
-    width:100%;
-  }
-  
-  .film-thumbnail img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .film-details {
-    padding: 20px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .film-details h4 {
-    margin-top: 0;
-    color: #666;
     font-size: 1.2rem;
+    padding: 10px 15px;
   }
-  
-  .film-release-date {
-    font-style: italic;
-    color: #888;
-    margin-bottom: 10px;
+
+  .film-details h4 {
+    font-size: 1rem;
   }
-  
-  .film-details p {
-    margin: 10px 0;
-    color: #444;
+}
+
+@media screen and (max-width: 480px) {
+  .film-card {
+    width: 95%;
   }
-  
-  @media screen and (max-width: 768px) {
-    .film-card {
-      width: 80%;
-    }
-  
-    .film-card header.badge {
-      font-size: 1.2rem;
-      padding: 10px 15px;
-    }
-  
-    .film-details h4 {
-      font-size: 1rem;
-    }
+
+  .film-card header.badge {
+    padding: 8px 10px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .film-card {
-      width: 95%;
-    }
-  
-    .film-card header.badge {
-      padding: 8px 10px;
-    }
-  
-    .film-details {
-      padding: 15px;
-    }
+
+  .film-details {
+    padding: 15px;
   }
-  
+}

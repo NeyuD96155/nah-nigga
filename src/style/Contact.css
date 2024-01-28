@@ -1,23 +1,23 @@
 .contact-container {
-  max-width: 500px; /* Reduced size */
+  max-width: 500px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
 }
 
 .contact-container:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* More prominent hover effect */
-  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
 
 .contact-container h2 {
   color: #333;
   margin-bottom: 15px;
   text-align: center;
-  font-size: 1.8rem; /* Slightly reduced size */
+  font-size: 1.8rem;
 }
 
 .contact-container p {
@@ -25,13 +25,13 @@
   line-height: 1.6;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1rem; /* Reduced size */
+  font-size: 1rem;
 }
 
 form {
   display: grid;
-  grid-gap: 15px; /* Reduced gap */
-  justify-content: center; /* Centered */
+  grid-gap: 15px;
+  justify-content: center;
 }
 
 form label {
@@ -41,9 +41,10 @@ form label {
   font-weight: bold;
 }
 
-form input, form textarea {
-  width: 90%; /* Reduced width */
-  margin: 0 auto; /* Centered */
+form input,
+form textarea {
+  width: 90%;
+  margin: 0 auto;
   padding: 10px;
   border: 2px solid #007bff;
   border-radius: 5px;
@@ -51,20 +52,21 @@ form input, form textarea {
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: #0056b3;
-  box-shadow: 0 0 8px rgba(0, 86, 179, 0.6); /* Enhanced focus effect */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.6);
   outline: none;
 }
 
 form textarea {
-  height: 80px; /* Reduced height */
+  height: 80px;
   resize: vertical;
 }
 
 .btn-outline-success {
-  width: 90%; /* Reduced width */
-  margin: 0 auto; /* Centered */
+  width: 90%;
+  margin: 0 auto;
   padding: 10px;
   border: 2px solid #28a745;
   border-radius: 5px;
@@ -115,20 +117,22 @@ form textarea {
 
 @media screen and (max-width: 768px) {
   .contact-container {
-      max-width: 90%; /* More responsive for smaller screens */
-      padding: 15px;
-      margin: 20px auto;
+    max-width: 90%;
+    padding: 15px;
+    margin: 20px auto;
   }
 
-  form input, form textarea, .btn-outline-success {
-      width: 100%; /* Full width for smaller screens */
+  form input,
+  form textarea,
+  .btn-outline-success {
+    width: 100%;
   }
 
   .contact-container h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .contact-container p {
-      font-size: 0.9rem; /* Slightly smaller for smaller screens */
+    font-size: 0.9rem;
   }
 }

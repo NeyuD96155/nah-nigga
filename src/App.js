@@ -15,7 +15,6 @@ function App() {
   return (
     <div>
       <Header />
-
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/detail/:id" element={<Detail />}></Route>

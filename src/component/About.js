@@ -9,16 +9,16 @@ const About = () => {
         <p>
           Imagine that your application is dedicated to enhancing user
           experience through innovative technology. The mission statement might
-          go as follows: "Our mission at <b>MINT TICKET</b> is to
-          revolutionize the way people interact with technology. We strive to
-          create user-friendly, efficient, and cutting-edge applications that
-          simplify everyday tasks and enhance productivity. Our goal is to
-          empower users by providing them with intuitive tools that make their
-          digital experience seamless and enjoyable. We are committed to
-          continuous improvement and innovation, ensuring that our solutions
-          always meet the evolving needs of our users. At the core of our
-          mission is a commitment to excellence, user satisfaction, and the
-          pursuit of technological advancement."
+          go as follows: "Our mission at <b>MINT TICKET</b> is to revolutionize
+          the way people interact with technology. We strive to create
+          user-friendly, efficient, and cutting-edge applications that simplify
+          everyday tasks and enhance productivity. Our goal is to empower users
+          by providing them with intuitive tools that make their digital
+          experience seamless and enjoyable. We are committed to continuous
+          improvement and innovation, ensuring that our solutions always meet
+          the evolving needs of our users. At the core of our mission is a
+          commitment to excellence, user satisfaction, and the pursuit of
+          technological advancement."
         </p>
       </section>
 
@@ -27,16 +27,17 @@ const About = () => {
         <p>
           The history of your application can be narrated to reflect its
           journey, challenges, and achievements. For example: "The journey of
-          <b> MINT TICKET</b> began in <i>2023</i>, born from a passion for technology and a
-          desire to make a tangible impact on people's lives. What started as a
-          small project in a tiny office has now grown into a leading
-          application in its field. Over the years, we have reached several
-          milestones that have been instrumental in shaping our journey. In
-           <i> 2023</i>, we launched our first version, which was met with great
+          <b> MINT TICKET</b> began in <i>2023</i>, born from a passion for
+          technology and a desire to make a tangible impact on people's lives.
+          What started as a small project in a tiny office has now grown into a
+          leading application in its field. Over the years, we have reached
+          several milestones that have been instrumental in shaping our journey.
+          In
+          <i> 2023</i>, we launched our first version, which was met with great
           enthusiasm and positive feedback. This was followed by a series of
           enhancements and new features, each aimed at providing more value to
-          our users. In <i>2020</i>, we achieved Academy Award for Best Picture, a
-          testament to our dedication and hard work. Each step of our journey
+          our users. In <i>2020</i>, we achieved Academy Award for Best Picture,
+          a testament to our dedication and hard work. Each step of our journey
           has been guided by our core values and a deep understanding of our
           users' needs. Today, as we continue to grow and evolve, we remain true
           to our roots – driven by innovation, user-centric design, and a
@@ -60,15 +61,14 @@ const About = () => {
           <h3>Mint</h3>
           <p>Editor</p>
         </div>
-        {/* Repeat for other team members */}
       </section>
 
       <section className="about-values">
         <h2>Our Values</h2>
         <p>
-          "At <b>MINT TICKET</b>, our values are the cornerstone of our identity and
-          the compass that guides every aspect of our work, decision-making, and
-          innovation. These values are not just words to us; they are the
+          "At <b>MINT TICKET</b>, our values are the cornerstone of our identity
+          and the compass that guides every aspect of our work, decision-making,
+          and innovation. These values are not just words to us; they are the
           principles we live by and are evident in every interaction with our
           users, partners, and team members. Innovation and Excellence: We
           believe in constantly pushing the boundaries of what's possible. Our

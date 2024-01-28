@@ -1,50 +1,53 @@
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.home-button,
+.news-button,
+.contact-button,
+.about-button,
+.switch-mode-button {
+  background-color: inherit;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   nav ul li {
-    margin: 0 15px;
+    margin: 5px 0;
   }
-  
-  button {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #666;
-    color: #fff;
-  }
-  
-  .home-button, .news-button, .contact-button, .about-button, .switch-mode-button {
-    background-color: inherit;
-    color: inherit;
-  }
-  
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin: 5px 0;
-    }
-  }
-  
+}
