@@ -37,11 +37,8 @@ export default function Content() {
 
         <div id="film-popup1" className="film-overlay">
           <div className="film-popup">
-            <img src={film.img} className="film-img-fluid" alt="zz" />
+            <img src={film.img} className="film-img-fluid" alt="" />
             <h3>{film.name}</h3>
-            <a className="film-close" href="#">
-              &times;
-            </a>
             <div className="film-content">{film.info}</div>
           </div>
         </div>

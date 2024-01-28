@@ -4,7 +4,7 @@
   /* Light mode link color */
   --link-hover-color: #ffffff;
   /* Light mode link hover color */
-  --background-color: #fff;
+  --background-color: #eaeaea;
   --text-color: #000;
   --primary-color: #007bff;
   /* Example primary color for light theme */
@@ -16,7 +16,7 @@
   --button-text-color: #333;
   --button-hover-background-color: #e0e0e0;
   --button-hover-text-color: #111;
-  --card-bg-color: #fff;
+  --card-bg-color: #f6f6f6;
   /* Light mode card background */
   --card-text-color: #333;
   /* Light mode text color */
@@ -48,7 +48,7 @@
   --button-text-color: #fff;
   --button-hover-background-color: #121212;
   --button-hover-text-color: #ffffff;
-  --card-bg-color: #5d5a5a;
+  --card-bg-color: #2f2f2f;
   /* Dark mode card background */
   --card-text-color: #000000;
   /* Dark mode text color */

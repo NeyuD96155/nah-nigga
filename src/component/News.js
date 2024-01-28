@@ -35,11 +35,8 @@ export default function News() {
         ))}
         <div id="news-popup1" className="news-overlay">
           <div className="news-popup">
-            <img src={article.img} className="news-img-fluid" alt="zz" />
+            <img src={article.img} className="news-img-fluid" alt="" />
             <h3>{article.name}</h3>
-            <a className="news-close" href="#">
-              &times;
-            </a>
             <div className="news-content">{article.info}</div>
           </div>
         </div>
